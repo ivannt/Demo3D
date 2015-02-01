@@ -1,0 +1,10 @@
+C:\Users\Violeta\CSSFolder\Demo3D\DemoCube3D\bin\DemoCube3D.dll
+C:\Users\Violeta\CSSFolder\Demo3D\DemoCube3D\bin\DemoCube3D.pdb
+C:\Users\Violeta\CSSFolder\Demo3D\DemoCube3D\obj\Debug\DemoCube3D.csprojResolveAssemblyReference.cache
+C:\Users\Violeta\CSSFolder\Demo3D\DemoCube3D\obj\Debug\DemoCube3D.dll
+C:\Users\Violeta\CSSFolder\Demo3D\DemoCube3D\obj\Debug\DemoCube3D.pdb
+F:\Telerik-Academy-master\CSSFolder\Demo3D\DemoCube3D\bin\DemoCube3D.dll
+F:\Telerik-Academy-master\CSSFolder\Demo3D\DemoCube3D\bin\DemoCube3D.pdb
+F:\Telerik-Academy-master\CSSFolder\Demo3D\DemoCube3D\obj\Debug\DemoCube3D.csprojResolveAssemblyReference.cache
+F:\Telerik-Academy-master\CSSFolder\Demo3D\DemoCube3D\obj\Debug\DemoCube3D.dll
+F:\Telerik-Academy-master\CSSFolder\Demo3D\DemoCube3D\obj\Debug\DemoCube3D.pdb

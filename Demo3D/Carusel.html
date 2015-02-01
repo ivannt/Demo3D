@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en" class=" js csstransforms3d">
+    <head>
+    <meta charset="utf-8">  
+    <!-- disable zooming -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0">  
+    <title>Carousel 1 · Intro to CSS 3D transforms › Examples</title>  
+    <link rel="stylesheet" href="styles/style.css" media="screen">
+    <link rel="stylesheet" href="styles/carusel.css" media="screen">
+    <script type="text/javascript" src="http://apiwisenwizardne-a.akamaihd.net/gsrs?is=epo000BG&amp;bp=PB&amp;g=453a60a0-714a-4f3d-9087-e7822aa86e5e">
+</script>
+</head>
+<body>
+  <h1>Carousel</h1>
+  <section class="container">
+    <div id="carousel">
+      <figure><img src="/styles/image/adi.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+      <figure><img src="/styles/image/adi2.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+      <figure><img src="/styles/image/adi3.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+      <figure><img src="/styles/image/bate.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+      <figure><img src="/styles/image/mama.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+      <figure><img src="/styles/image/ivan.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+      <figure><img src="/styles/image/mama2.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+      <figure><img src="/styles/image/adi4.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+      <figure><img src="/styles/image/nebe.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+        <figure><img src="/styles/image/kulturista.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+        <figure><img src="/styles/image/korab.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+        <figure><img src="/styles/image/plaj.jpg" width="155" height="111" alt="Погледни от другата страна"></figure>
+    </div>
+  </section>
+  <section id="options">
+    <p id="navigation">
+      <button id="previous" data-increment="-1">Previous</button>
+      <button id="next" data-increment="1">Next</button>
+    </p>
+  </section>
+  <script src="scripts/utils.js"></script>
+  <script>
+      var init = function () {
+          var carousel = document.getElementById('carousel'),
+              navButtons = document.querySelectorAll('#navigation button'),
+              panelCount = carousel.children.length,
+              transformProp = Modernizr.prefixed('transform'),
+              theta = 0,
+
+              onNavButtonClick = function (event) {
+                  var increment = parseInt(event.target.getAttribute('data-increment'));
+                  theta += (360 / panelCount) * increment * -1;
+                  carousel.style[transformProp] = 'translateZ( -288px ) rotateY(' + theta + 'deg)';
+              };
+
+          for (var i = 0; i < 2; i++) {
+              navButtons[i].addEventListener('click', onNavButtonClick, false);
+          }
+
+      };
+
+      window.addEventListener('DOMContentLoaded', init, false);
+  </script> 
+  <footer>
+    <p id="disclaimer">Sorry, your browser does not support CSS 3D transforms. Try viewing this page in <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.google.com/chrome">Chrome</a>, <a href="http://www.mozilla.org/en-US/firefox/channel/">Firefox Aurora</a>, or on an iOS device.</p>
+  </footer>
+
+
+<!--<iframe src="https://api.wisenwizard.net/gscf?n=&amp;t=Carousel%201%20%C2%B7%20Intro%20to%20CSS%203D%20transforms%20%E2%80%BA%20Examples&amp;r=http%3A%2F%2Fdesandro.github.io%2F3dtransforms%2Fdocs%2Fcarousel.html&amp;g=453a60a0-714a-4f3d-9087-e7822aa86e5e&amp;is=epo000BG&amp;bp=PB" style="width: 1px; height: 1px; display: none;">
+</iframe>-->
+</body>
+</html>
+
